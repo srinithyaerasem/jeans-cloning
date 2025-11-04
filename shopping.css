@@ -1,0 +1,282 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section{
+    
+    display: grid;
+    grid-template-areas: 
+    "navbar navbar navbar navbar"
+        "header header header header"
+        "image image image image"
+        "product1 product2 product3 product4"
+        "product5 product6 product7 product8"
+        "forms forms forms forms"
+        "footer footer footer footer"
+        "footb footb footb footb";
+        ;
+}
+div{
+    /* border: 2px solid black; */
+    height: 50px;
+}
+
+.nav1 {
+    grid-area: navbar;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: rgb(167, 164, 164);
+    font-size: 20px;
+    padding: 10px 40px;
+    border-bottom: 2px solid lightgray;
+}
+
+.nav1 ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+}
+
+.nav1 li {
+    cursor: pointer;
+}
+
+.nav1 li:hover {
+    text-decoration: underline;
+}
+
+
+/* .nav h1{
+    width: 80%;
+
+} */
+ .nav {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 40px;
+}
+
+.nav-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.nav ion-icon {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.image{
+    grid-area: image;
+    background-image: url("	https://www.w3schools.com/w3images/jeans.jpg");
+    height: 700px;
+    justify-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-resolution: 25%;
+    width: 100%;
+    
+}
+.image h3{
+    margin-top: 50px;
+    margin-left: 40px;
+    justify-self: start;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+.image h4{
+    margin-top: 40px;
+    margin-left: 40px;
+    justify-self: start;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.button-shop{
+    margin-top: 40px;
+    margin-left: 40px;
+    justify-self: start;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.image-layout{
+    /* width: 50px; */
+    height: 300px;
+    /* margin-left: 50px; */
+    margin-top: 30px;
+    
+    /* justify-self: center; */
+    /* object-fit: cover; */
+}
+.item1{
+    grid-area: product1;
+    height: 400px;
+    margin-left: 50px;
+
+}
+.item2{
+    grid-area: product2;
+    height: 400px;
+}
+.item3{
+    grid-area: product3;
+    height: 400px;
+}
+.item4{
+    grid-area: product4;
+    height: 400px;
+}
+.item5{
+    grid-area: product5;
+    height: 400px;
+    margin-left: 50px;
+}
+.item6{
+    grid-area: product6;
+    height: 400px;
+}
+.item7{
+    grid-area: product7;
+    height: 400px;
+}
+.item8{
+    grid-area: product8;
+    height: 400px;
+}
+.form{
+    margin-top: 30px;
+    grid-area: forms;
+    height: 230px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.heading {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 45px;
+}
+
+.form p {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.email-input{
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 85%;
+    border: none;
+    border-radius: 5px;
+}
+.subscribe-button{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    background-color: rgb(250, 73, 73);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-content {
+    grid-area: footer;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 0;
+}
+
+.foot-section1 h4 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.foot-section1 p {
+  margin-bottom: 15px;
+}
+
+.foot-section1 ul {
+  list-style: none;
+  text-decoration: underline;
+  padding: 0;
+}
+.input{
+    width: 300px;
+    margin: 10px;
+    height: 35px;
+}
+.button-send{
+    width: 300px;
+    margin: 10px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.foot-section1 li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.contact button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.foot-section1 a:hover {
+  text-decoration: underline;
+}
+.footer-bottom{
+    grid-area: footb;
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
